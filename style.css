@@ -11,8 +11,24 @@
     border-radius: 10px;
     background-color: #1D4ED8;
     color: #fff;
-    
     cursor: pointer;
+}
+.common_btn_v2{
+    background-color: #fff;
+    border: 1px solid #2563EB;
+    border-radius: 8px;
+    color: #2563EB;
+    padding: 11px 106px;
+    margin-top: 32px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 21px;
+    width: 100%;
+}
+.common_btn_v2.active{
+    background-color: #2563EB;
+    color: #fff;
 }
 /* *Navbar */
 nav{
@@ -20,6 +36,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 24px 116px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
 }
 #navlinks{
     display: flex;
@@ -77,6 +98,11 @@ color: #fff;
 }
 main{
     margin: 0px 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
 }
 /* *speakers */
 #speakers{
@@ -133,4 +159,89 @@ main{
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 21px;
+}
+/* *Secure Your Spot */
+#pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px 60px 60px 60px;
+}
+#pricing_section_title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+#pricing_section_subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.cards{
+    padding-top: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+.card{
+    width: 370px;
+    height: 444px;
+    padding: 32px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+}
+.plans{
+    font-size: 0.813rem;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: .32px;
+    color: #888888;
+    text-transform: uppercase;
+}
+.card.active>.plans{ 
+    color: #93C5FD;
+}
+.price{
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 44px;
+}
+.user_label{
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #888888;
+}
+hr{
+    margin: 20px 0px;
+    border: none;
+    border-top: 1px solid ;
+}
+.card>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 18px;
+}
+.card>ul>li::marker{
+    color: #2563EB;
+}
+.card>ul>li{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+}
+.card.active{
+    background-color: #0D1B2A;
+    color: #fff ; 
+}
+.card.active>ul>li{
+    background-color: #0D1B2A;
+    color: #fff ; 
 }
