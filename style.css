@@ -30,6 +30,15 @@
     background-color: #2563EB;
     color: #fff;
 }
+.more_session{
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #2563EB;
+    color: #fff;
+    cursor: pointer;
+
+}
 /* *Navbar */
 nav{
     display: flex;
@@ -70,7 +79,7 @@ gap: 200px;
 background: linear-gradient(90deg, rgba(0, 0, 0, 0.60) 30%, rgba(0, 0, 0, 0.00) 70%), 
             linear-gradient(213deg, rgba(0, 0, 0, 0.00) 42.9%, rgba(0, 0, 0, 0.88) 82.18%), 
             url(./assets/banner.jpg) lightgray 50% / cover no-repeat;
-height: 786px;
+height: 986px;
 color: #fff;
 }
 #hero_section_title{
@@ -244,4 +253,69 @@ hr{
 .card.active>ul>li{
     background-color: #0D1B2A;
     color: #fff ; 
+}
+#track{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+#section_context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 46px;
+}
+#track_section_title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 38.4px;
+}
+#track_section_subtitle{
+    max-width: 608px;
+    color: #6B7280;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+}
+.track_cards{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+.track_card{
+    width: 338px;
+    padding: 33px 0px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 33px;
+}
+.track_card_description{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #6B7280;
+    margin-top: 12px;
+}
+.features{
+    padding-left: 18px;
+    margin-top: 26px;
+    margin-bottom: 22px;
+}
+.features>li{
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: #6B7280;
+}
+.icon{
+    padding: 14px 17px;
+    background-color: #EFF3FF;
+    color: #2F5FEB;
+    border-radius: 10px;margin-bottom: 24px;
 }

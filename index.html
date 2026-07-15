@@ -7,20 +7,22 @@
     <!-- !Favicon -->
      <link rel="shortcut icon" href="./assets/logo-mini.png" type="image/x-icon">
     <!-- !Google font link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- !CSS file -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+     <!-- !icons -->
+    <script src="https://kit.fontawesome.com/9538e475ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
-            <img src="./assets/logo.png" alt="DevConf2026">
+            <a href="./index.html"><img src="./assets/logo.png" alt="DevConf2026"></a>
             <ul id="navlinks">
                 <li><a href="#speakers">Speakers</a></li>
                 <li><a href="#pricing">Schedule</a></li>
-                <li><a href="">Tracks</a></li>
+                <li><a href="#track">Tracks</a></li>
                 <li><a href="">Venue</a></li>
                 <li><a href="">Blog</a></li>
             </ul>
@@ -125,7 +127,62 @@
                 </div>
             </div>
         </section>
-
+        <section id="track">
+            <div id="section_context">
+                <h1 id="track_section_title">Choose Your Track</h1>
+                <p id="track_section_subtitle">Four expertly curated tracks designed to take your skills to the next level — pick the one that matters most to you.</p>
+            </div>
+            <div class="track_cards">
+                <div class="track_card">
+                    <i class="fa-solid fa-user icon"></i>
+                    <p class="category">AI / ML</p>
+                    <p class="Speaker_name">Intelligence at Scale</p>
+                    <p class="track_card_description">From transformer architectures to production ML pipelines — learn how the best teams ship AI.</p>
+                    <ul class="features">
+                        <li>12 talks & 3 workshops</li>
+                        <li>LLMs & Foundation Models</li>
+                        <li>MLOps & Model Serving</li>
+                    </ul>
+                    <button class="more_session">14 session</button>
+                </div>
+                <div class="track_card">
+                    <i class="fa-solid fa-cloud icon"></i>
+                    <p class="category">CLOUD & DEVOPS</p>
+                    <p class="Speaker_name">Infrastructure Reimagined</p>
+                    <p class="track_card_description">Kubernetes, serverless, platform engineering — master the stack that powers modern software delivery.</p>
+                    <ul class="features">
+                        <li>11 talks & 4 workshops</li>
+                        <li>Kubernetes & Platform Eng</li>
+                        <li>Observability & SRE</li>
+                    </ul>
+                    <button class="more_session">15 session</button>
+                </div>
+                <div class="track_card">
+                    <i class="fa-solid fa-display icon"></i>
+                    <p class="category">FRONTEND</p>
+                    <p class="Speaker_name">Infrastructure Reimagined</p>
+                    <p class="track_card_description">React, design systems, web performance — build interfaces that users love and engineers enjoy maintaining.</p>
+                    <ul class="features">
+                        <li>10 talks & 3 workshops</li>
+                        <li>React & Next.js Deep Dives</li>
+                        <li>Design Systems at Scale</li>
+                    </ul>
+                    <button class="more_session">13 session</button>
+                </div>
+                <div class="track_card">
+                    <i class="fa-solid fa-shield-halved icon"></i>
+                    <p class="category">SECURITY</p>
+                    <p class="Speaker_name">Defend What You Build</p>
+                    <p class="track_card_description">Zero trust, supply chain security, threat modeling — stay ahead of the attackers shaping today's threat landscape.</p>
+                    <ul class="features">
+                        <li>9 talks & 2 workshops</li>
+                        <li>Zero Trust Architecture</li>
+                        <li>Supply Chain Security</li>
+                    </ul>
+                    <button class="more_session">11 session</button>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
